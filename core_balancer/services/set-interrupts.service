@@ -1,0 +1,9 @@
+[Unit]
+Description=set smp affinity
+After=network.target
+
+[Service]
+ExecStart=/usr/local/set_interrupts.sh
+
+[Install]
+WantedBy=multi-user.target
